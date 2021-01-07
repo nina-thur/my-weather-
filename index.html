@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
     <title>Weather App</title>
     <link rel="stylesheet" href="src/styles.css" />
 </head>
@@ -16,23 +15,31 @@
             <form class="search-form" id="search-form">
                 <div class="row">
                     <div class="col-6">
-                        <input type="search" placeholder="Enter city here" autofocus="on" autocomplete="off"
-                            id="city-input" class="form-control shadow-sm" />
+                        <input 
+                        type="search" 
+                        placeholder="Enter city here" 
+                        autofocus="on" autocomplete="off"
+                        id="city-input" class="form-control shadow-sm" />
                     </div>
                     <div class="col-3">
-                        <input type="submit" value="Search" class="form-control btn btn-primary shadow-sm w-100" />
+                        <input 
+                        type="submit" 
+                        value="Search" 
+                        class="form-control btn btn-primary shadow-sm w-100" />
                     </div>
+                </form>
 
-            </form>
             <h1 id="city"></h1>
             <ul>
                 <li id="description"></li>
             </ul>
+
             <div class="row">
                 <div class="col-6">
                     <div class="clearfix">
                         <div class="float-left">
-                            <span class="temperature" id="temperature"></span><span class="units">°C</span>
+                            <span class="temperature" id="temperature"></span>
+                            <span class="units">°C</span>
                         </div>
                     </div>
                 </div>
@@ -53,5 +60,4 @@
     </p>
     <script src="src/index.js"></script>
 </body>
-
 </html>
